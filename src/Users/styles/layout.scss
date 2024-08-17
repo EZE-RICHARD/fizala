@@ -1,0 +1,20 @@
+@use "src/index.scss" as *;
+
+.DashBoardContainer {
+  width: 100%;
+  height: 100%;
+  @include laptop {
+    display: grid;
+    grid:
+      "sidebar body" 1fr
+      / 18% 1fr;
+    gap: 8px;
+  }
+  .SideMenu{
+    grid-area: sidebar;
+    position: relative;
+  }
+  .mainContent{
+    grid-area: body;
+  }
+}

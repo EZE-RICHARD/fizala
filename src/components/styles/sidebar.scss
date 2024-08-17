@@ -1,0 +1,186 @@
+@use "src/index.scss" as *;
+
+.sideBar {
+  width: 17%;
+  height: 100vh;
+  background-color: $light-primary;
+  position: fixed;
+  z-index: 2;
+  transition: transform 0.3s ease-in-out;
+  @include tablet{
+    width: 40%;
+  }
+  @include laptop {
+    height: 100%;
+    width: 18%;
+    border-radius: 0;
+  }
+
+  .brand {
+    border-bottom: 2px solid #8282821f;
+  }
+  nav {
+    ul {
+      height: 60vh;
+      overflow-y: scroll;
+      &::-webkit-scrollbar {
+        width: 4px; /* width of the entire scrollbar */
+      }
+      &::-webkit-scrollbar-thumb {
+        background-color: #8282821f;
+        border-radius: 20px;
+      }
+      li {
+        padding: 0.3rem 0 0.3rem 2rem;
+        margin-top: 0.5rem;
+        font-size: 1rem;
+        .navlink {
+          display: flex;
+          align-items: baseline;
+          gap: 0.5rem;
+          color: black;
+          text-decoration: none;
+          font-size: larger;
+          padding: 0.5rem 0 0.5rem;
+        }
+      }
+    }
+    .footBtns {
+      padding: 0.3rem 0 0.3rem 2rem;
+    }
+  }
+}
+
+.activeLink {
+  background-color: #fff;
+  font-weight: 500;
+}
+
+/* 
+
+.dash_Box {
+  width: 100%;
+  height: 100%;
+  background-color: $pale_blue;
+  @include laptop {
+    display: grid;
+    grid:
+      "sidebar body" 1fr
+      / 23% 1fr;
+    gap: 8px;
+  }
+
+  .side_menu {
+    grid-area: sidebar;
+    position: relative;
+    padding: 1rem 1rem 2rem;
+    @include laptop {
+      padding: 0;
+    }
+    .aside {
+      width: 80%;
+      height: 95vh;
+      border-radius: $border-rad;
+      padding: 1rem;
+      background-color: #fff;
+      position: fixed;
+      z-index: 2;
+      transition: transform 0.3s ease-in-out;
+      @include tablet{
+        width: 40%;
+      }
+      @include laptop {
+        height: 100%;
+        width: 23%;
+
+        background-color: $pale_blue;
+
+        border-radius: 0;
+      }
+      .brand {
+        padding: 1rem 0 1rem;
+        border-bottom: 1px solid $blue;
+      }
+      .nav_menu {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        height: 70vh;
+      }
+      .foot {
+        position: absolute;
+        bottom: 1rem;
+        width: 100%;
+      }
+    }
+  }
+
+  .main {
+    grid-area: body;
+
+    .summary_info {
+      @include tablet {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+      }
+      .informations {
+        i {
+          @include gradient;
+        }
+      }
+    }
+
+    .data_section {
+      .chart_cont{
+        width: 100%;
+        @include laptop{
+          width: 60%;
+        }
+      }
+      .chart {
+        width: 100%;
+        @include tablet{
+          width: 60%;
+        }
+        @include laptop {
+          width: 70%;
+        }
+      }
+
+      .transacrion_history {
+        height: fit-content;
+        width: 100%;
+        
+        @include laptop {
+          width: 40%;
+        }
+        .histories {
+          .transaction {
+            span {
+              img {
+                width: 50px;
+                border-radius: 50%;
+                aspect-ratio: 1/1;
+                object-fit: cover;
+              }
+            }
+            .employee_name {
+              width: 100%;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+*/
