@@ -23,6 +23,7 @@
     ul {
       height: 60vh;
       overflow-y: scroll;
+      // background-color: chartreuse;
       &::-webkit-scrollbar {
         width: 4px; /* width of the entire scrollbar */
       }
@@ -30,20 +31,9 @@
         background-color: #8282821f;
         border-radius: 20px;
       }
-      li {
-        padding: 0.3rem 0 0.3rem 2rem;
-        margin-top: 0.5rem;
-        font-size: 1rem;
-        .navlink {
-          display: flex;
-          align-items: baseline;
-          gap: 0.5rem;
-          color: black;
-          text-decoration: none;
-          font-size: larger;
-          padding: 0.5rem 0 0.5rem;
-        }
-      }
+      // li {
+
+      // }
     }
     .footBtns {
       padding: 0.3rem 0 0.3rem 2rem;
@@ -51,10 +41,44 @@
   }
 }
 
+
 .activeLink {
-  background-color: #fff;
-  font-weight: 500;
+  color: #ff9933;
+  background-color: #fff !important;
+  font-weight: bolder;
+
 }
+
+
+.navlink {
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 0.3rem 0 0.3rem 2rem;
+  margin-top: 0.5rem;
+  li{
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+    color: black;
+    text-decoration: none;
+    font-size: larger;
+    // padding: 0.5rem 0 0.5rem;
+  }
+}
+
+.activeLi {
+  color: white;
+}
+
+
+
+
+
+/* .activeLink {
+  background-color: #fff !important;
+  // font-weight: 500;
+  // border-right:7px solid #ff9933;
+} */
 
 /* 
 
