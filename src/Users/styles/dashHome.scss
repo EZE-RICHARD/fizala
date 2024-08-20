@@ -1,0 +1,43 @@
+@use "src/index.scss" as *;
+.content-body{
+    padding: 1.5rem 3rem 0;
+    background-color: #fafafa;
+    
+}
+
+.listings{
+    ul{
+        display: grid;
+        grid-template-columns: repeat( auto-fit, minmax(350px, 1fr) );
+        gap: 2rem;
+        li{
+            background-color: #fff;
+            figure{
+                height: 228px;
+                width: 100%;
+                background: $grey;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            article{
+                .description{
+                    color: $grey;
+                }
+                .actions{
+                    color: $grey;
+                    .icon{
+
+                        font-size: 1.5rem;
+                    }
+                    .bookmark{
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                        
+                    }
+                }
+            }
+        }
+    }
+}

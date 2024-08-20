@@ -1,6 +1,7 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
 import Sidebar from "../components/Sidebar";
+import NavigationBar from "../components/NavigationBar";
 import "./styles/layout.scss"
 
 const DashLayout = () => {
@@ -8,10 +9,11 @@ const DashLayout = () => {
     <div className="DashBoardContainer">
 
       <aside className="SideMenu">
-        <Sidebar />
+        <Sidebar className="" />
       </aside>
 
       <main className="mainContent">
+        <NavigationBar className=""/>
         <Outlet />
       </main>
 

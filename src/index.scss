@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 $medium: 520px; //tablet boots -576px
 $large: 850px; //laptop
 $xlarge: 1200px; //desktop
@@ -6,6 +8,9 @@ $primary-color:#ff9933;
 $secondary-color:#fff;
 $hover-color:#e58019;
 $light-primary:#fff2e4;
+$light-primary-2:#fff5eb;
+$green:#2be67c;
+$grey:#c0bab7;
 $dark-grey:#444444;
 
 @mixin tablet {
@@ -25,6 +30,11 @@ $dark-grey:#444444;
     @content;
   }
 }
+*, *::before, *::after {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
 
 .btn-warning{
   background: $primary-color;
@@ -34,4 +44,11 @@ $dark-grey:#444444;
     background: $hover-color;
     border: 0;
   }
+}
+.text-warning{
+  color: $primary-color !important;
+}
+
+.bg-success{
+  background: $green !important;
 }

@@ -1,0 +1,38 @@
+@use "src/index.scss" as *;
+
+.miniProfile {
+  background-color: $light-primary-2;
+  width: 15%;
+  height: 4rem;
+  display: none;
+  align-items: center;
+  gap: .5rem;
+  @include laptop{
+    display: flex;
+  }
+  .imgFrame {
+    width: 60px;
+    position: relative;
+    img {
+      width: 100%;
+      border-radius: 50%;
+      aspect-ratio: 1/1;
+      border: 3px solid white;
+    }
+    .userStatus{
+        width: 17px; 
+        height: 17px; 
+        border-radius: 50%; 
+        background-color: $green;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        border: 3px solid #fff;
+    }
+  }
+  .username{
+    small{
+        color: $grey;
+    }
+  }
+}

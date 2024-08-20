@@ -1,0 +1,50 @@
+@use "src/index.scss" as *;
+
+.metric-board{
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+    background: rgb(255, 255, 255);
+    border-bottom: 3px solid $green;
+    figure{
+        border-radius: 50%;
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        .ico{
+            color: $green ;
+        }
+    }
+    article{
+        line-height: .1px;
+        .tag{
+            font-weight: 500;
+        }
+        .tag-amount{
+            font-size: 3rem;
+        }
+
+        .mini-tag{
+            line-height: 1rem;
+        }
+    }
+}
+
+
+
+// .total-listing{
+//     background-color: red;
+// } 
+// .buyer-calls{
+//     background-color: blue;
+// }
+// .affiliate-earnings{
+//     background-color: crimson;
+// }
+.vrl{
+    background-color: $grey;
+    height:100%;
+    width: 1px;
+}

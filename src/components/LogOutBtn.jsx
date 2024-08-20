@@ -6,7 +6,7 @@ import './styles/btn.scss'
 
 const LogOutBtn = () => {
   return (
-    <button className='btn btn btn-outline-dark d-flex align-items-center gap-2 fontSize'><FaPowerOff />Logout</ button>
+    <button className='btn btn btn-outline-dark d-flex align-items-center gap-2 logBtn'><FaPowerOff />Logout</ button>
   )
 }
 

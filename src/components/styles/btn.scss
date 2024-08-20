@@ -1,4 +1,20 @@
-.fontSize{
-    font-size: 1.1rem;
+@use "src/index.scss" as *;
+
+.logBtn{
     font-weight: 600;
+    @include laptop {
+        font-size: 1.1rem;
+
+    }
 }
+
+.sell{
+    background-color: $primary-color;
+    border: 0;
+    color: white;
+    font-weight: bold;
+    @include laptop { 
+        font-size: 1.3rem;
+    } 
+}
+
